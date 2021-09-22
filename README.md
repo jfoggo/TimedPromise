@@ -12,7 +12,7 @@ This is a `NodeJS` module and is available via `npm`:
 
 ## Documentation
 ```
-let promise = new TimedPromise(executor,timeout=0)
+let promise = new TimerPromise(executor,timeout=0)
 ```
 INPUT:
 - exeutor: (required) promise function with resolve+reject
