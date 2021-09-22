@@ -1,1 +1,1 @@
-# TimedPromise
+# timer-promise
