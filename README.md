@@ -15,7 +15,7 @@ This is a `NodeJS` module and is available via `npm`:
 let promise = new TimerPromise(executor,timeout=0)
 ```
 INPUT:
-- exeutor: (required) promise function with resolve+reject
+- exeutor: (required) promise function with resolve+reject arguments
 - timeout: (optional) integer in milliseconds, default=0
 
 OUTPUT:
@@ -39,6 +39,9 @@ new TimerPromise((resolve,reject)=>{
    resolve();
 })
 ```
+
+## Dependencies
+This module has no dependencies.
 
 ## License
 MIT License
