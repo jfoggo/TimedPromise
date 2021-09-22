@@ -2,7 +2,7 @@
 This module offers a `TimerPromise` class which extends the promise functionality with a timeout.
 
 ## Installation
-This is a `NodeJS` module and is available via `npm`:
+This is a `NodeJS` module and it is available via `npm` (Node-Package-Manager):
 
 `npm install timer-promise`
 
