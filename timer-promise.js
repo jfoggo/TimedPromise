@@ -1,7 +1,7 @@
 function TimerPromise(executor,timeout=0){
-	return Promise.race([
+	return !isNaN(parseInt(timeout)) && timeout > 0 ? Promise.race([
 		new Promise(executor),
-		new Promise((resolve,reject)=>!isNaN(parseInt(timeout)) && timeout > 0 ? setTimeout(()=>reject(new Error("Promise timedout after "+timeout+"ms")),timeout) : 0)
-	]);
+		new Promise((resolve,reject)=>setTimeout(()=>reject(new Error("Promise timedout after "+timeout+"ms")),timeout))
+	]) : new Promise(executor);
 }
 module.exports = TimerPromise;
