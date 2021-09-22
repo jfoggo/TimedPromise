@@ -8,12 +8,18 @@ This is a `NodeJS` module and is available via `npm`:
 
 ## Features
 - The `TimerPromise` class allows to set a maximum execution time (in ms) via `timeout` parameter.
-- If no timeout argument provided (or timeout <= 0), the class wiöl behave just as a usual promise.
+- If no timeout argument provided (or timeout <= 0), the class will behave just as a usual promise and no timer wiöl be used.
 
 ## Documentation
-`let promise = new TimedPromise(executor,timeout=0)`
+```
+let promise = new TimedPromise(executor,timeout=0)
+```
+INPUT:
 - exeutor: (required) promise function with resolve+reject
 - timeout: (optional) integer in milliseconds, default=0
+
+OUTPUT:
+- promise (rejects an Error in case of timeout)
 
 ## Examples
 ```
@@ -26,6 +32,12 @@ let timeout = 1000; // 1000ms = 1s
 new TimerPromise(executor,timeout)
    .then(result => console.log("[*] promise resolved: "+result))
    .catch(error => console.log("[*] promise rejected: "+error));
+
+// Example 2: No timeout argument, works like a usual promise
+new TimerPromise((resolve,reject)=>{
+   // do some stuff
+   resolve();
+})
 ```
 
 ## License
