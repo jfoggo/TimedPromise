@@ -1,4 +1,4 @@
-# timer-promise
+# promise-timed
 This module offers a `TimerPromise` class which extends the promise functionality with a timeout.
 
 ## Installation
