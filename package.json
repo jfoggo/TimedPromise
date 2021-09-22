@@ -19,7 +19,7 @@
 	"author": "J.Foggo",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/jfoggo/TimedPromise/issues"
+		"url": "https://github.com/jfoggo/timer-promise/issues"
 	},
-	"homepage": "https://github.com/jfoggo/TimedPromise#readme"
+	"homepage": "https://github.com/jfoggo/timer-romise#readme"
 }
