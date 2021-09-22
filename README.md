@@ -8,7 +8,7 @@ This is a `NodeJS` module and is available via `npm`:
 
 ## Features
 - The `TimerPromise` class allows to set a maximum execution time (in ms) via `timeout` parameter.
-- If no timeout argument provided (or timeout <= 0), the class will behave just as a usual promise and no timer wiöl be used.
+- If no timeout argument provided (or timeout <= 0), the class will behave just as a usual promise and no timer will be used.
 
 ## Documentation
 ```
