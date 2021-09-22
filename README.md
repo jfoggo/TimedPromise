@@ -4,7 +4,7 @@ This module offers a `TimerPromise` class which extends the promise functionalit
 ## Installation
 This is a `NodeJS` module and it is available via `npm` (Node-Package-Manager):
 
-`npm install timer-promise`
+`npm install promise-timed`
 
 ## Features
 - The `TimerPromise` class allows to set a maximum execution time (in ms) via `timeout` parameter.
@@ -24,7 +24,7 @@ OUTPUT:
 ## Examples
 ```
 // include module
-const TimerPromise = require("timer-promise");
+const TimerPromise = require("promise-timed");
 
 // Example 1: Never ending promise rejects after timeout
 let executor = (resolve,reject) => { /* do nothing ... */ };

@@ -1,15 +1,15 @@
 {
-	"name": "timer-promise",
+	"name": "promise-timed",
 	"version": "1.0.0",
 	"description": "Promise with additional timeout functionality",
-	"main": "timer-promise.js",
+	"main": "promise-timed.js",
 	"scripts": {
-		"test": "node timer-promise.js",
-		"start": "node timer-promise.js"
+		"test": "node promise-timed.js",
+		"start": "node promise-timed.js"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/jfoggo/timer-promise.git"
+		"url": "git+https://github.com/jfoggo/promise-timed.git"
 	},
 	"keywords": [
 		"nodejs",
@@ -19,7 +19,7 @@
 	"author": "J.Foggo",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/jfoggo/timer-promise/issues"
+		"url": "https://github.com/jfoggo/promise-timed/issues"
 	},
-	"homepage": "https://github.com/jfoggo/timer-romise#readme"
+	"homepage": "https://github.com/jfoggo/promise-timed#readme"
 }
