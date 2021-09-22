@@ -1,5 +1,5 @@
 # promise-timed
-This module offers a `TimerPromise` class which extends the promise functionality with a timeout.
+This module offers a `TimedPromise` class which extends the promise functionality with a timeout.
 
 ## Installation
 This is a `NodeJS` module and it is available via `npm` (Node-Package-Manager):
@@ -7,12 +7,12 @@ This is a `NodeJS` module and it is available via `npm` (Node-Package-Manager):
 `npm install promise-timed`
 
 ## Features
-- The `TimerPromise` class allows to set a maximum execution time (in ms) via `timeout` parameter.
+- The `TimedPromise` class allows to set a maximum execution time (in ms) via `timeout` parameter.
 - If no timeout argument provided (or timeout <= 0), the class will behave just as a usual promise and no timer will be used.
 
 ## Documentation
 ```
-let promise = new TimerPromise(executor,timeout=0)
+let promise = new TimedPromise(executor,timeout=0)
 ```
 INPUT:
 - exeutor: (required) promise function with resolve+reject arguments
@@ -24,17 +24,17 @@ OUTPUT:
 ## Examples
 ```
 // include module
-const TimerPromise = require("promise-timed");
+const TimedPromise = require("promise-timed");
 
 // Example 1: Never ending promise rejects after timeout
 let executor = (resolve,reject) => { /* do nothing ... */ };
 let timeout = 1000; // 1000ms = 1s
-new TimerPromise(executor,timeout)
+new TimedPromise(executor,timeout)
    .then(result => console.log("[*] promise resolved: "+result))
    .catch(error => console.log("[*] promise rejected: "+error));
 
 // Example 2: No timeout argument, works like a usual promise
-new TimerPromise((resolve,reject)=>{
+new TimedPromise((resolve,reject)=>{
    // do some stuff
    resolve();
 })
